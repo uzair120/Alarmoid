@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "Alarmoid",
+  "description": "This is a Chrome extension for setting Alarm in your browser.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "images/48.png",
+    "64": "images/64.png",
+    "128": "images/128.png"
+  },
+  "permissions": ["alarms", "notifications"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Alarmoid"
+  },
+  "options_page": "index.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["images/128.png"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}

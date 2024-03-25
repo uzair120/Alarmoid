@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <section id="addAlarmPage" class="page active">
+        <h2>Create Alarm</h2>
+        <form class="create-alarm">
+            <div class="create-alarm__label">Name</div>
+            <div class="create-alarm__value">
+                <input type="text" name="alarm-name" value="my-alarm" />
+            </div>
+
+            <div class="create-alarm__label">Time: </div>
+            <div class="create-alarm__value">
+                <input type="time" name="time-input" />
+            </div>
+
+
+            <div class="create-alarm__label">Repetition period: </div>
+            <div class="create-alarm__value">
+                <select name="time-format">
+                    <option id="format-onetime" value="ot">One Time</option>
+                    <option id="format-days" value="dd" selected>Daily</option>
+                    <option id="format-weeks" value="ww">Weekly</option>
+                </select>
+            </div>
+
+            <button id="submit" class="create-alarm__submit">Submit</button>
+            <button id="backToListFromAdd" class="back-button"><i class="fas fa-arrow-left"></i> Back</button>
+        </form>
+    </section>
+
+    <section id="alarmListPage" class="page">
+        <section class="">
+            <h2>
+                Current Alarms
+                <button id="goToAddAlarm" class="add-button"> Add New</button>
+            </h2>
+
+            <pre class="alarm-display">
+            </pre>
+        </section>
+
+        <section style="display: none;">
+            <h2>Alarm log</h2>
+            <pre class="alarm-log"></pre>
+        </section>
+        <div class="display-buttons">
+            <button id="clear-display">Cancel all alarms</button>
+        </div>
+
+    </section>
+</body>
+
+</html>

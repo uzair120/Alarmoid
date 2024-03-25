@@ -1,0 +1,159 @@
+:root {
+    --card-min-width: 20em;
+    --card-max-width: 25em;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    width: 25rem;
+}
+
+/* Alarm creation form */
+.create-alarm {
+    display: grid;
+    gap: 10px;
+}
+
+.create-alarm__label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    text-align: left;
+}
+
+.create-alarm__value input,
+.create-alarm__value select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.create-alarm__value i {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Button Styling */
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.create-alarm__submit {
+    background-color: #28a745;
+}
+
+.create-alarm__submit:hover {
+    background-color: #218838;
+}
+
+.back-button {
+    background-color: #6c757d;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.add-button {
+    font-size: small;
+    background-color: #28a745;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.page {
+    max-width: 600px;
+    margin: 0px 0px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Alarm List Page Styles */
+#alarmListPage {
+    position: relative;
+}
+
+#alarmListPage h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+}
+
+.display-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+#clear-display {
+    background-color: #ff0000;
+}
+
+
+.alarm-display {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 15px;
+    overflow-y: auto;
+    height: 300px;
+    /* Adjust based on your needs */
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.alarm-list {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.alarm-row__cancel-button-div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.alarm-row__cancel-button {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
